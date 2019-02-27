@@ -10,6 +10,7 @@
 > track when key was used last time. So probably it will be still used in future, but what if it was only ‘one shot’ before long idle time? Key will be stored to next eviction cycle.
 
 ### LFU：Least Frequently Used
+
 - 从 Redis 4.0 开始支持
 - 计算 key 使用次数
 - 最常使用的 key 会在淘汰周期下生存下来
@@ -44,7 +45,6 @@ if warming-up is not important, disable all persistence options.
 > create persistence logs with every write operation. If you consider this level of durability, you should read about different fsync policies under appendfsync configuration parameter.
 
 ### RDB + AOF
-
 
 
 
